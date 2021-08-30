@@ -1,0 +1,852 @@
+fileFormatVersion: 2
+guid: a3a0e628f0488db4aaae257d9f2464ca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3018972868074937463
+    second: Download Wooden Buttons For Ui Game for free_0
+  - first:
+      213: -8014479867503189672
+    second: Download Wooden Buttons For Ui Game for free_1
+  - first:
+      213: -4344546945217540759
+    second: Download Wooden Buttons For Ui Game for free_2
+  - first:
+      213: -4089661787501586780
+    second: Download Wooden Buttons For Ui Game for free_3
+  - first:
+      213: -8790094650728715852
+    second: Download Wooden Buttons For Ui Game for free_4
+  - first:
+      213: 6690518843402017625
+    second: Download Wooden Buttons For Ui Game for free_5
+  - first:
+      213: 5168409080433587445
+    second: Download Wooden Buttons For Ui Game for free_6
+  - first:
+      213: 777949058097375638
+    second: Download Wooden Buttons For Ui Game for free_7
+  - first:
+      213: -2108609970495948817
+    second: Download Wooden Buttons For Ui Game for free_8
+  - first:
+      213: 5476086924194094371
+    second: Download Wooden Buttons For Ui Game for free_9
+  - first:
+      213: 8406239531230207420
+    second: Download Wooden Buttons For Ui Game for free_10
+  - first:
+      213: 428183963470959289
+    second: Download Wooden Buttons For Ui Game for free_11
+  - first:
+      213: -6174683341497309421
+    second: Download Wooden Buttons For Ui Game for free_12
+  - first:
+      213: -9195300344135046477
+    second: Download Wooden Buttons For Ui Game for free_13
+  - first:
+      213: 8718417453001936122
+    second: Download Wooden Buttons For Ui Game for free_14
+  - first:
+      213: -564356210697022087
+    second: Download Wooden Buttons For Ui Game for free_15
+  - first:
+      213: -7332214212522980277
+    second: Download Wooden Buttons For Ui Game for free_16
+  - first:
+      213: 1894203433378007240
+    second: Download Wooden Buttons For Ui Game for free_17
+  - first:
+      213: -2169745404311861238
+    second: Download Wooden Buttons For Ui Game for free_18
+  - first:
+      213: 447532857372470120
+    second: Download Wooden Buttons For Ui Game for free_19
+  - first:
+      213: 5949775703653312499
+    second: Download Wooden Buttons For Ui Game for free_20
+  - first:
+      213: 8446071117365906884
+    second: Download Wooden Buttons For Ui Game for free_21
+  - first:
+      213: -8777153866800381636
+    second: Download Wooden Buttons For Ui Game for free_22
+  - first:
+      213: -2714643251709690111
+    second: Download Wooden Buttons For Ui Game for free_23
+  - first:
+      213: 6568196737289149343
+    second: Download Wooden Buttons For Ui Game for free_24
+  - first:
+      213: -2562186836871072015
+    second: Download Wooden Buttons For Ui Game for free_25
+  - first:
+      213: -560361883182246977
+    second: Download Wooden Buttons For Ui Game for free_26
+  - first:
+      213: -8009302487931600643
+    second: Download Wooden Buttons For Ui Game for free_27
+  - first:
+      213: -1801591764894608563
+    second: Download Wooden Buttons For Ui Game for free_28
+  - first:
+      213: -1465253164464088569
+    second: Download Wooden Buttons For Ui Game for free_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 492
+        width: 286
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983e9d3fb247a16d0800000000000000
+      internalID: -3018972868074937463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_1
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 495
+        width: 252
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851e3f5e509d6c090800000000000000
+      internalID: -8014479867503189672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 407
+        width: 70
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96dcc4c529115b3c0800000000000000
+      internalID: -4344546945217540759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 408
+        width: 69
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a69a70b54a9e37c0800000000000000
+      internalID: -4089661787501586780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_4
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 408
+        width: 69
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9e041bc7f430680800000000000000
+      internalID: -8790094650728715852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_5
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 408
+        width: 69
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95bd800b07f79dc50800000000000000
+      internalID: 6690518843402017625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_6
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 407
+        width: 70
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4b52ddca0e9b740800000000000000
+      internalID: 5168409080433587445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_7
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 408
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6996e3deb84dbca00800000000000000
+      internalID: 777949058097375638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_8
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 408
+        width: 69
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7fdba5766bcb2e0800000000000000
+      internalID: -2108609970495948817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_9
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 319
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d10c34b08fefb40800000000000000
+      internalID: 5476086924194094371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_10
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 319
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd92d3c056f8a470800000000000000
+      internalID: 8406239531230207420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 318
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b29431db0731f500800000000000000
+      internalID: 428183963470959289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_12
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 319
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317e78d373e1f4aa0800000000000000
+      internalID: -6174683341497309421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_13
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 319
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3baadc84e0bb36080800000000000000
+      internalID: -9195300344135046477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_14
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 319
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc0fb93b7a0ef870800000000000000
+      internalID: 8718417453001936122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_15
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 319
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9755e9634010b28f0800000000000000
+      internalID: -564356210697022087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 235
+        width: 83
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c4f7d750ebe3a90800000000000000
+      internalID: -7332214212522980277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_17
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 235
+        width: 83
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c842da9cff894a10800000000000000
+      internalID: 1894203433378007240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_18
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 235
+        width: 83
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0884f2fc0483e1e0800000000000000
+      internalID: -2169745404311861238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_19
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 232
+        width: 64
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b600d33c4f53600800000000000000
+      internalID: 447532857372470120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_20
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 234
+        width: 68
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7618daa79d19250800000000000000
+      internalID: 5949775703653312499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_21
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 234
+        width: 69
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd084a9ee8763570800000000000000
+      internalID: 8446071117365906884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_22
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 181
+        width: 294
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31ca6ebf09413680800000000000000
+      internalID: -8777153866800381636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_23
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 149
+        width: 61
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10fbee96856a35ad0800000000000000
+      internalID: -2714643251709690111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_24
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 146
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bdffcf12ce62b50800000000000000
+      internalID: 6568196737289149343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_25
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 146
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f63e1c95a8417cd0800000000000000
+      internalID: -2562186836871072015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_26
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 134
+        width: 294
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3d04f06d13938f0800000000000000
+      internalID: -560361883182246977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_27
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 87
+        width: 294
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df04f2482dd39d090800000000000000
+      internalID: -8009302487931600643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_28
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 39
+        width: 252
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d431037c5d57ff6e0800000000000000
+      internalID: -1801591764894608563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Download Wooden Buttons For Ui Game for free_29
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 40
+        width: 294
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ad91a92006aabe0800000000000000
+      internalID: -1465253164464088569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
