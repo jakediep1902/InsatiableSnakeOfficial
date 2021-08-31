@@ -63,6 +63,7 @@ public class GameController : MonoBehaviour
     public Slider targetBar;
 
     private PlayerController playerCtr;
+    Admod ad;
 
     Vector2 spawPos;
     string bestScoreString;
@@ -98,6 +99,7 @@ public class GameController : MonoBehaviour
 
         auSource = GetComponent<AudioSource>();
         playerCtr = player.GetComponent<PlayerController>();
+        ad = GetComponent<Admod>();
 
     }
     void Update()
@@ -173,6 +175,7 @@ public class GameController : MonoBehaviour
         auSource.loop = false;
         stopGame = true;
         Invoke("LoadScene", 3f);
+        ad.RequestInterstitial();
     }
     public void WinGame()
     {
@@ -186,6 +189,7 @@ public class GameController : MonoBehaviour
         auSource.volume = 1f;
         auSource.Play();
         auSource.loop = false;
+        ad.RequestInterstitial();
     }
     public void SetScore()
     {
