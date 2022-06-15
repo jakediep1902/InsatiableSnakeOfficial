@@ -8,10 +8,12 @@ public class Admod : MonoBehaviour
     private BannerView bannerView;
     private InterstitialAd interstitial;
     private RewardedAd rewardedAd;
+    public GameController gameController;
 
     // Start is called before the first frame update
     void Start()
     {
+        gameController = GameController.Instance;
         MobileAds.Initialize(initStatus => { });
 
         this.RequestBanner();
@@ -36,44 +38,33 @@ public class Admod : MonoBehaviour
         // Load the banner with the request.
         this.bannerView.LoadAd(request);
     }
-
-
-
     public void RequestInterstitial()
     {
 #if UNITY_ANDROID
-        //string adUnitId = "ca-app-pub-3940256099942544/1033173712";//thu nghiem
-        string adUnitId = "ca-app-pub-7260641755866450/1974015627";
+        string adUnitId = "ca-app-pub-3940256099942544/1033173712";//thu nghiem
+        //string adUnitId = "ca-app-pub-7260641755866450/1974015627";
 #elif UNITY_IPHONE
         string adUnitId = "ca-app-pub-3940256099942544/4411468910";
 #else
         string adUnitId = "unexpected_platform";
 #endif
-
         // Initialize an InterstitialAd.
         this.interstitial = new InterstitialAd(adUnitId);
-
         // Create an empty ad request.
         AdRequest request = new AdRequest.Builder().Build();
+        // Called when an ad request has successfully loaded.
+        this.interstitial.OnAdLoaded += Interstitial_OnAdLoaded;
         // Load the interstitial with the request.
-        this.interstitial.LoadAd(request);
-
+        this.interstitial.LoadAd(request);   
+    }
+    private void Interstitial_OnAdLoaded(object sender, System.EventArgs e)
+    {
         if (this.interstitial.IsLoaded())
         {
             this.interstitial.Show();
+            Debug.Log($"Intersitial inside");
         }
-
-        //    // Called when an ad request has successfully loaded.
-        //    this.interstitial.OnAdLoaded += Interstitial_OnAdLoaded;
     }
-
-    //private void Interstitial_OnAdLoaded(object sender, System.EventArgs e)
-    //{
-    //    if(this.interstitial.IsLoaded())
-    //    {
-    //        this.interstitial.Show();
-    //    }
-    //}   
 
     public void CreateAndLoadRewardedAd()
     {
@@ -100,15 +91,19 @@ public class Admod : MonoBehaviour
     private void RewardedAd_OnAdClosed(object sender, System.EventArgs e)
     {
         //when user close ad
+        gameController.ResumeGame();
+        Debug.Log($"Reward on ad closed");
     }
 
     private void RewardedAd_OnUserEarnedReward(object sender, Reward e)
     {
         //reward user
+        Debug.Log($"Reward on user earned reward");
     }
-
     private void RewardedAd_OnAdLoaded(object sender, System.EventArgs e)
     {
         rewardedAd.Show();
+        gameController.PauseGame();
+        Debug.Log($"Reward on ad loaded");
     }
 }
