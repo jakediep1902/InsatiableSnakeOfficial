@@ -93,7 +93,7 @@ TextureImporter:
       213: -1465253164464088569
     second: Download Wooden Buttons For Ui Game for free_29
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -110,10 +110,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -122,9 +124,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -152,6 +154,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -844,9 +848,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Download Wooden Buttons For Ui Game for free_0: -3018972868074937463
+      Download Wooden Buttons For Ui Game for free_1: -8014479867503189672
+      Download Wooden Buttons For Ui Game for free_10: 8406239531230207420
+      Download Wooden Buttons For Ui Game for free_11: 428183963470959289
+      Download Wooden Buttons For Ui Game for free_12: -6174683341497309421
+      Download Wooden Buttons For Ui Game for free_13: -9195300344135046477
+      Download Wooden Buttons For Ui Game for free_14: 8718417453001936122
+      Download Wooden Buttons For Ui Game for free_15: -564356210697022087
+      Download Wooden Buttons For Ui Game for free_16: -7332214212522980277
+      Download Wooden Buttons For Ui Game for free_17: 1894203433378007240
+      Download Wooden Buttons For Ui Game for free_18: -2169745404311861238
+      Download Wooden Buttons For Ui Game for free_19: 447532857372470120
+      Download Wooden Buttons For Ui Game for free_2: -4344546945217540759
+      Download Wooden Buttons For Ui Game for free_20: 5949775703653312499
+      Download Wooden Buttons For Ui Game for free_21: 8446071117365906884
+      Download Wooden Buttons For Ui Game for free_22: -8777153866800381636
+      Download Wooden Buttons For Ui Game for free_23: -2714643251709690111
+      Download Wooden Buttons For Ui Game for free_24: 6568196737289149343
+      Download Wooden Buttons For Ui Game for free_25: -2562186836871072015
+      Download Wooden Buttons For Ui Game for free_26: -560361883182246977
+      Download Wooden Buttons For Ui Game for free_27: -8009302487931600643
+      Download Wooden Buttons For Ui Game for free_28: -1801591764894608563
+      Download Wooden Buttons For Ui Game for free_29: -1465253164464088569
+      Download Wooden Buttons For Ui Game for free_3: -4089661787501586780
+      Download Wooden Buttons For Ui Game for free_4: -8790094650728715852
+      Download Wooden Buttons For Ui Game for free_5: 6690518843402017625
+      Download Wooden Buttons For Ui Game for free_6: 5168409080433587445
+      Download Wooden Buttons For Ui Game for free_7: 777949058097375638
+      Download Wooden Buttons For Ui Game for free_8: -2108609970495948817
+      Download Wooden Buttons For Ui Game for free_9: 5476086924194094371
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

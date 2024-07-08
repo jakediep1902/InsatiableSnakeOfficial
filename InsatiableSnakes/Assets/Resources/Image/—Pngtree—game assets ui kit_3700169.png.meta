@@ -30,7 +30,7 @@ TextureImporter:
       213: -6452166358491763090
     second: "\u2014Pngtree\u2014game assets ui kit_3700169_8"
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -47,10 +47,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -59,9 +61,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -89,6 +91,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -340,9 +344,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      "\u2014Pngtree\u2014game assets ui kit_3700169_0": 94820952992277392
+      "\u2014Pngtree\u2014game assets ui kit_3700169_1": -5521391823945889093
+      "\u2014Pngtree\u2014game assets ui kit_3700169_2": 6541838694966828566
+      "\u2014Pngtree\u2014game assets ui kit_3700169_3": -1749396200758919285
+      "\u2014Pngtree\u2014game assets ui kit_3700169_4": -7750259315202536399
+      "\u2014Pngtree\u2014game assets ui kit_3700169_5": 6628743409015171196
+      "\u2014Pngtree\u2014game assets ui kit_3700169_6": 1846886178242358616
+      "\u2014Pngtree\u2014game assets ui kit_3700169_7": -3040960555164872744
+      "\u2014Pngtree\u2014game assets ui kit_3700169_8": -6452166358491763090
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

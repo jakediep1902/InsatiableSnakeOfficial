@@ -13,7 +13,8 @@ public class GameController : MonoBehaviour
         {
             if (instance == null)
             {
-                instance = FindObjectOfType<GameController>();
+                //instance = FindObjectOfType<GameController>();
+                instance = Object.FindFirstObjectByType<GameController>();
                 if (instance == null)
                 {
                     instance = new GameObject().AddComponent<GameController>();
@@ -63,7 +64,7 @@ public class GameController : MonoBehaviour
     public Slider targetBar;
 
     private PlayerController playerCtr;
-    Admod ad;
+    //Admod ad;
 
     Vector2 spawPos;
     string bestScoreString;
@@ -99,7 +100,7 @@ public class GameController : MonoBehaviour
 
         auSource = GetComponent<AudioSource>();
         playerCtr = player.GetComponent<PlayerController>();
-        ad = GetComponent<Admod>();
+        //ad = GetComponent<Admod>();
 
     }
     void Update()
@@ -175,7 +176,7 @@ public class GameController : MonoBehaviour
         auSource.loop = false;
         stopGame = true;
         Invoke("LoadScene", 3f);
-        ad.RequestInterstitial();
+        //ad.RequestInterstitial();
     }
     public void WinGame()
     {
@@ -189,7 +190,7 @@ public class GameController : MonoBehaviour
         auSource.volume = 1f;
         auSource.Play();
         auSource.loop = false;
-        ad.RequestInterstitial();
+        //ad.RequestInterstitial();
     }
     public void SetScore()
     {
@@ -300,8 +301,11 @@ public class GameController : MonoBehaviour
     }
     void ClearTrash()
     {             
-        SegmentEnemy[] trash = GameObject.FindObjectsOfType<SegmentEnemy>();
-        BodyPlayer[] trash2 = GameObject.FindObjectsOfType<BodyPlayer>();
+        //SegmentEnemy[] trash = GameObject.FindObjectsOfType<SegmentEnemy>();
+        //BodyPlayer[] trash2 = GameObject.FindObjectsOfType<BodyPlayer>();
+
+        SegmentEnemy[] trash = Object.FindObjectsByType<SegmentEnemy>(FindObjectsSortMode.InstanceID);
+        BodyPlayer[] trash2 = FindObjectsByType<BodyPlayer>(FindObjectsSortMode.InstanceID);
         for (int i = 0; i < trash.Length; i++)
         {
             //Debug.Log("Trash: "+trash.Length);

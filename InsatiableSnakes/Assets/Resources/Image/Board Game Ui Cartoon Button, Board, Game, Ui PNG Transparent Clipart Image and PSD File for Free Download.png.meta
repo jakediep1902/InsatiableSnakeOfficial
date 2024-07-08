@@ -55,7 +55,7 @@ TextureImporter:
     second: Board Game Ui Cartoon Button, Board, Game, Ui PNG Transparent Clipart
       Image and PSD File for Free Download_12
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,10 +72,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -84,9 +86,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -114,6 +116,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -462,9 +466,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Board Game Ui Cartoon Button, Board, Game, Ui PNG Transparent Clipart Image and PSD File for Free Download_0: 2657327720205235704
+      Board Game Ui Cartoon Button, Board, Game, Ui PNG Transparent Clipart Image and PSD File for Free Download_1: 7040739781184596597
+      Board Game Ui Cartoon Button, Board, Game, Ui PNG Transparent Clipart Image and PSD File for Free Download_10: 3520187774183801647
+      Board Game Ui Cartoon Button, Board, Game, Ui PNG Transparent Clipart Image and PSD File for Free Download_11: -7066447133244702780
+      Board Game Ui Cartoon Button, Board, Game, Ui PNG Transparent Clipart Image and PSD File for Free Download_12: -309323623105419246
+      Board Game Ui Cartoon Button, Board, Game, Ui PNG Transparent Clipart Image and PSD File for Free Download_2: 2893895870828703447
+      Board Game Ui Cartoon Button, Board, Game, Ui PNG Transparent Clipart Image and PSD File for Free Download_3: 4567188910538770272
+      Board Game Ui Cartoon Button, Board, Game, Ui PNG Transparent Clipart Image and PSD File for Free Download_4: 8716258551173898799
+      Board Game Ui Cartoon Button, Board, Game, Ui PNG Transparent Clipart Image and PSD File for Free Download_5: 7033701592063257333
+      Board Game Ui Cartoon Button, Board, Game, Ui PNG Transparent Clipart Image and PSD File for Free Download_6: -2351414312044911510
+      Board Game Ui Cartoon Button, Board, Game, Ui PNG Transparent Clipart Image and PSD File for Free Download_7: -6433991375731226404
+      Board Game Ui Cartoon Button, Board, Game, Ui PNG Transparent Clipart Image and PSD File for Free Download_8: -454042216739409217
+      Board Game Ui Cartoon Button, Board, Game, Ui PNG Transparent Clipart Image and PSD File for Free Download_9: -7480927304359610693
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
