@@ -1,4 +1,4 @@
-using System.Collections;
+
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,8 +12,7 @@ public class GameController : MonoBehaviour
         get
         {
             if (instance == null)
-            {
-                //instance = FindObjectOfType<GameController>();
+            {               
                 instance = Object.FindFirstObjectByType<GameController>();
                 if (instance == null)
                 {
@@ -64,7 +63,7 @@ public class GameController : MonoBehaviour
     public Slider targetBar;
 
     private PlayerController playerCtr;
-    //Admod ad;
+    public Admod ad;
 
     Vector2 spawPos;
     string bestScoreString;
@@ -100,8 +99,6 @@ public class GameController : MonoBehaviour
 
         auSource = GetComponent<AudioSource>();
         playerCtr = player.GetComponent<PlayerController>();
-        //ad = GetComponent<Admod>();
-
     }
     void Update()
     {
@@ -176,7 +173,6 @@ public class GameController : MonoBehaviour
         auSource.loop = false;
         stopGame = true;
         Invoke("LoadScene", 3f);
-        //ad.RequestInterstitial();
     }
     public void WinGame()
     {
@@ -190,7 +186,6 @@ public class GameController : MonoBehaviour
         auSource.volume = 1f;
         auSource.Play();
         auSource.loop = false;
-        //ad.RequestInterstitial();
     }
     public void SetScore()
     {
@@ -243,8 +238,7 @@ public class GameController : MonoBehaviour
         Time.timeScale = 1;
     }
     public void LoadScene()
-    {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    {      
         pnlEndGame.SetActive(true);
         bestScore.text = "Best Score: " + bestScoreString;
         auSource.clip = auPnlEnd;
@@ -300,10 +294,7 @@ public class GameController : MonoBehaviour
         }
     }
     void ClearTrash()
-    {             
-        //SegmentEnemy[] trash = GameObject.FindObjectsOfType<SegmentEnemy>();
-        //BodyPlayer[] trash2 = GameObject.FindObjectsOfType<BodyPlayer>();
-
+    {                    
         SegmentEnemy[] trash = Object.FindObjectsByType<SegmentEnemy>(FindObjectsSortMode.InstanceID);
         BodyPlayer[] trash2 = FindObjectsByType<BodyPlayer>(FindObjectsSortMode.InstanceID);
         for (int i = 0; i < trash.Length; i++)

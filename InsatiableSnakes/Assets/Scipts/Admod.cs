@@ -2,22 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using GoogleMobileAds.Api;
+using System;
 
 public class Admod : MonoBehaviour
-{
+{    
     private BannerView bannerView;
-    private InterstitialAd interstitial;
+    private InterstitialAd _interstitialAd;
     private RewardedAd rewardedAd;
     public GameController gameController;
-    public string AndroidBannerID = "ca-app-pub-3940256099942544/6300978111";//thu nghiem
-    public string IOSBannerID = "ca-app-pub-3940256099942544/2934735716";//thu nghiem
-    public string AndroidnterstitialID;
+    public string AndroidBannerID       = "ca-app-pub-3940256099942544/6300978111";//thu nghiem
+    public string IOSBannerID           = "ca-app-pub-3940256099942544/2934735716";//thu nghiem
+    public string AndroidInterstitialID = "ca-app-pub-3940256099942544/1033173712";//thu nghiem
+    public string IOSInterstitialID     = "ca-app-pub-3940256099942544/4411468910";//thu nghiem
+
+
+
 
     // Start is called before the first frame update
     void Start()
     {
+        BoardCountDown.eventCountDone.AddListener(() => { ShowInterstitialAd(); });
         gameController = GameController.Instance;
-        MobileAds.Initialize(initStatus => { RequestBanner();});       
+        MobileAds.Initialize(initStatus => {
+            RequestBanner();
+            LoadInterstitialAd();
+        });
+        
     }   
     private void RequestBanner()
     {
@@ -41,72 +51,92 @@ public class Admod : MonoBehaviour
         // Load the banner with the request.
         bannerView.LoadAd(request);
     }
-//    public void RequestInterstitial()
-//    {
-//#if UNITY_ANDROID
-//        string adUnitId = "ca-app-pub-3940256099942544/1033173712";//thu nghiem
-//        //string adUnitId = "ca-app-pub-7260641755866450/1974015627";
-//#elif UNITY_IPHONE
-//        string adUnitId = "ca-app-pub-3940256099942544/4411468910";
-//#else
-//        string adUnitId = "unexpected_platform";
-//#endif
-//        // Initialize an InterstitialAd.
-//        this.interstitial = new InterstitialAd(adUnitId);
-//        // Create an empty ad request.
-//        AdRequest request = new AdRequest.Builder().Build();
-//        // Called when an ad request has successfully loaded.
-//        this.interstitial.OnAdLoaded += Interstitial_OnAdLoaded;
-//        // Load the interstitial with the request.
-//        this.interstitial.LoadAd(request);
-//    }
-//    private void Interstitial_OnAdLoaded(object sender, System.EventArgs e)
-//    {
-//        if (this.interstitial.IsLoaded())
-//        {
-//            this.interstitial.Show();
-//            Debug.Log($"Intersitial inside");
-//        }
-//    }
+    public void LoadInterstitialAd()
+    {
+#if UNITY_ANDROID
+        string _adUnitId = AndroidInterstitialID;
+#elif UNITY_IPHONE
+        string _adUnitId = IOSInterstitialID;
+#else
+        string _adUnitId = "unused";
+#endif
+        // Clean up the old ad before loading a new one.
+        if (_interstitialAd != null)
+        {
+            _interstitialAd.Destroy();
+            _interstitialAd = null;
+        }
+        Debug.Log("Loading the interstitial ad.");
+        // create our request used to load the ad.
+        var adRequest = new AdRequest();
+        // send the request to load the ad.
+        InterstitialAd.Load(_adUnitId, adRequest,
+            (InterstitialAd ad, LoadAdError error) =>
+            {
+                // if error is not null, the load request failed.
+                if (error != null || ad == null)
+                {
+                    Debug.LogError("interstitial ad failed to load an ad " +
+                                   "with error : " + error);
+                    return;
+                }
+                Debug.Log("Interstitial ad loaded with response : "
+                          + ad.GetResponseInfo());
+                _interstitialAd = ad;
+                RegisterEventHandlers(_interstitialAd);
+            });     
+    }
+    public void ShowInterstitialAd()
+    {
+        if (_interstitialAd != null && _interstitialAd.CanShowAd())
+        {
+            Debug.Log("Showing interstitial ad.");
+            _interstitialAd.Show();
+        }
+        else
+        {
+            Debug.LogError("Interstitial ad is not ready yet.");
+        }
+    }
+    private void RegisterEventHandlers(InterstitialAd interstitialAd)
+    {
+        // Raised when the ad is estimated to have earned money.
+        interstitialAd.OnAdPaid += (AdValue adValue) =>
+        {
+            Debug.Log(String.Format("Interstitial ad paid {0} {1}.",
+                adValue.Value,
+                adValue.CurrencyCode));
+        };
+        // Raised when an impression is recorded for an ad.
+        interstitialAd.OnAdImpressionRecorded += () =>
+        {
+            Debug.Log("Interstitial ad recorded an impression.");
+        };
+        // Raised when a click is recorded for an ad.
+        interstitialAd.OnAdClicked += () =>
+        {
+            Debug.Log("Interstitial ad was clicked.");
+        };
+        // Raised when an ad opened full screen content.
+        interstitialAd.OnAdFullScreenContentOpened += () =>
+        {
+            Debug.Log("Interstitial ad full screen content opened.");
+        };
+        // Raised when the ad closed full screen content.
+        interstitialAd.OnAdFullScreenContentClosed += () =>
+        {
+            _interstitialAd.Destroy();
+            LoadInterstitialAd();
+            Debug.Log("Interstitial ad full screen content closed.");
+        };
+        // Raised when the ad failed to open full screen content.
+        interstitialAd.OnAdFullScreenContentFailed += (AdError error) =>
+        {
+            Debug.LogError("Interstitial ad failed to open full screen content " +
+                           "with error : " + error);
+            LoadInterstitialAd();
+        };
+    }
 
-//    public void CreateAndLoadRewardedAd()
-//    {
-//#if UNITY_ANDROID
-//        string adUnitId = "ca-app-pub-3940256099942544/5224354917";//thu nghiem
-//#elif UNITY_IPHONE
-//            string adUnitId = "ca-app-pub-3940256099942544/1712485313";
-//#else
-//            string adUnitId = "unexpected_platform";
-//#endif
-
-//        this.rewardedAd = new RewardedAd(adUnitId);
-
-//        this.rewardedAd.OnAdLoaded += RewardedAd_OnAdLoaded;
-//        this.rewardedAd.OnUserEarnedReward += RewardedAd_OnUserEarnedReward;
-//        this.rewardedAd.OnAdClosed += RewardedAd_OnAdClosed;
-
-//        // Create an empty ad request.
-//        AdRequest request = new AdRequest.Builder().Build();
-//        // Load the rewarded ad with the request.
-//        this.rewardedAd.LoadAd(request);
-//    }
-
-//    private void RewardedAd_OnAdClosed(object sender, System.EventArgs e)
-//    {
-//        //when user close ad
-//        gameController.ResumeGame();
-//        Debug.Log($"Reward on ad closed");
-//    }
-
-//    private void RewardedAd_OnUserEarnedReward(object sender, Reward e)
-//    {
-//        //reward user
-//        Debug.Log($"Reward on user earned reward");
-//    }
-//    private void RewardedAd_OnAdLoaded(object sender, System.EventArgs e)
-//    {
-//        rewardedAd.Show();
-//        gameController.PauseGame();
-//        Debug.Log($"Reward on ad loaded");
-//    }
+  
 }
