@@ -1,12 +1,12 @@
 using System.Collections;
 using UnityEngine;
-using TMPro;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class BoardCountDown : MonoBehaviour
 {
     public static UnityEvent eventCountDone = new UnityEvent();
-    public TextMeshProUGUI txtCountDown;
+    public Text txtCountDown;
     public int duration = 2;
     IEnumerator countDown(int duration)
     {

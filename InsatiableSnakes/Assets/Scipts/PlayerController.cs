@@ -14,14 +14,19 @@ public class PlayerController : MonoBehaviour
     AudioSource auSource;
 
     public Button btnLaunch;
+    public Button btnBoostTempDefaul;
+    public Button btnBoostTempPlus;
     public Joystick joystick;
     public float moveSpeed = 1;
     public float maxSize = 3;
+    
       
     public int status = 0;
     public int heartAte = 0;
     public int numTest;
     int countOnBtn = 0;
+
+    private bool isBoost = false;
 
     public GameObject segmentPrefab;
     public GameObject blood;
@@ -32,7 +37,8 @@ public class PlayerController : MonoBehaviour
     Vector2 minPos;
     Vector2 moveSnake;
     Vector2 moveDirection;
-        
+    Vector2 boostHead;
+
     void Start()
     {
         auSource = GetComponent<AudioSource>();
@@ -41,7 +47,21 @@ public class PlayerController : MonoBehaviour
         Grow(numTest);
 
         btnLaunch.onClick.AddListener(() => Launch(2));
+        btnBoostTempDefaul.onClick.AddListener(() => BoostTemp());
+        btnBoostTempPlus.onClick.AddListener(() => BoostTemp());
         btnLaunch.gameObject.SetActive(true);
+
+        if(GlobalData.isUserWatchAds)
+        {
+            AddBoostPlus(true);
+            Debug.Log(GlobalData.isUserWatchAds);
+            GlobalData.isUserWatchAds = false;
+            
+        }
+        else
+        {
+            AddBoostPlus(false);
+        }
 
     }  
     //void Update()
@@ -71,7 +91,7 @@ public class PlayerController : MonoBehaviour
          (Mathf.Clamp(transform.position.x, minPos.x, maxPos.x), Mathf.Clamp(transform.position.y, minPos.y, maxPos.y));
 
         switch (status)
-            {
+        {
                 case 1://Attacked
                     containerSegment.Clear();
                     for (int i = 0; i < segmentList.Count; i++)
@@ -121,19 +141,31 @@ public class PlayerController : MonoBehaviour
                         }
 
                         segment.localScale = Vector2.one * ((segmentList.Count - i) / 50f);//scale segment                   
-                        if (segment.localScale.x < 1f)
+                        if (segment.localScale.x < 1f && !isBoost)
                         {
                             segment.localScale = Vector2.one; //- Vector2.up*0.6f;
                         }
                         if (segment.localScale.x > maxSize)
                         {
-                        segment.localScale = Vector2.one * maxSize;
+                            segment.localScale = Vector2.one * maxSize;
                         }
-                    gameObject.transform.localScale = segmentList[1].transform.localScale;//scale head
-                        gameObject.transform.localScale = new Vector2(transform.localScale.x, transform.localScale.x);
+                        
+                        if(isBoost)
+                    {
+                        gameObject.transform.localScale = boostHead;
+                    }
+                    else
+                    {
+                        gameObject.transform.localScale = segmentList[1].transform.localScale;//scale head
+                    }
+                            
+                        
+
+                         //gameObject.transform.localScale = segmentList[1].transform.localScale;//scale head
+                        //gameObject.transform.localScale = new Vector2(transform.localScale.x, transform.localScale.x);
                     }
                     break;
-            }
+        }
 
             if (moveDirection == Vector2.zero && segmentList.Count > 15)
             {
@@ -219,4 +251,20 @@ public class PlayerController : MonoBehaviour
     //{
     //    segment.rotation = head.rotation;
     //}
+    public void BoostTemp()
+    {
+        StartCoroutine(nameof(CorBoosTemp));
+    }
+    IEnumerator CorBoosTemp()
+    {
+        isBoost = true;
+        boostHead = gameObject.transform.localScale*2;       
+        btnBoostTempDefaul.gameObject.SetActive(false);
+        yield return new WaitForSeconds(10);       
+        isBoost = false;
+    }
+    public void AddBoostPlus(bool status = true)
+    {
+        btnBoostTempPlus.gameObject.SetActive(status);
+    }
 }

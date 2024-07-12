@@ -1,0 +1,21 @@
+# ninja log v5
+48	450	7423838029417486	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d2fac008bb0fcbe
+1	1586	7423838041125860	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	9d9ad0a1fe793be1
+451	702	7423838031734353	D:/Unity/Projects/Personal/InsatiableSnakesOfficial/InsatiableSnakes/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/p32n2zqi/obj/arm64-v8a/libswappywrapper.so	657fde31a1273ecb
+26	1209	7423838037298965	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	dd73230a8645eea7
+9	1253	7423838037779134	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	fc3eb9d82df440b0
+5	1356	7423838038790880	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	c1700cdb267bdd34
+21	1276	7423838037972396	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	bbbc140dc41b3cb4
+32	1328	7423838038508285	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	7f15ba4366bec83a
+16	1527	7423838040498794	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	73c8dd7ed13fb4b2
+1587	1704	7423838041919009	D:/Unity/Projects/Personal/InsatiableSnakesOfficial/InsatiableSnakes/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/p32n2zqi/obj/arm64-v8a/libgame.so	f8465540dc7d88c2
+24	235	7424803887944104	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d2fac008bb0fcbe
+235	501	7424803889950347	D:/Unity/Projects/Personal/InsatiableSnakesOfficial/InsatiableSnakes/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/p32n2zqi/obj/arm64-v8a/libswappywrapper.so	657fde31a1273ecb
+28	1043	7424803895961926	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	dd73230a8645eea7
+20	1073	7424803896264249	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	bbbc140dc41b3cb4
+7	1099	7424803896550171	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	fc3eb9d82df440b0
+17	1137	7424803896944923	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	7f15ba4366bec83a
+3	1204	7424803897624522	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	c1700cdb267bdd34
+13	1320	7424803898798484	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	73c8dd7ed13fb4b2
+10	1403	7424803899560251	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	9d9ad0a1fe793be1
+1403	1526	7424803900428571	D:/Unity/Projects/Personal/InsatiableSnakesOfficial/InsatiableSnakes/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/p32n2zqi/obj/arm64-v8a/libgame.so	f8465540dc7d88c2

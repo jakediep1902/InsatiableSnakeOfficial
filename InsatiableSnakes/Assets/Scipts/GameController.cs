@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class GameController : MonoBehaviour
 {
@@ -57,6 +58,8 @@ public class GameController : MonoBehaviour
     public Button btnReplay;
     public Button btnBackToHome;
     public Button btnPlayGame;
+    public Button btnGetReward;
+    public Button btnSkipAds;
     public Text score;
     public Text heartAte;
     public Text bestScore;
@@ -64,6 +67,9 @@ public class GameController : MonoBehaviour
 
     private PlayerController playerCtr;
     public Admod ad;
+
+    public static UnityEvent eventSkipAds = new UnityEvent();
+    public static UnityEvent eventGetReward = new UnityEvent();
 
     Vector2 spawPos;
     string bestScoreString;
@@ -96,9 +102,12 @@ public class GameController : MonoBehaviour
         btnRestartGameLost.onClick.AddListener(() => SetRestartGame());
         btnReplay.onClick.AddListener(() => SetRestartGame());
         btnPlayGame.onClick.AddListener(() => PlayGame());
+        btnGetReward.onClick.AddListener(() => { eventGetReward?.Invoke();});
+        btnSkipAds.onClick.AddListener(() => { eventSkipAds?.Invoke(); });
 
         auSource = GetComponent<AudioSource>();
         playerCtr = player.GetComponent<PlayerController>();
+      
     }
     void Update()
     {

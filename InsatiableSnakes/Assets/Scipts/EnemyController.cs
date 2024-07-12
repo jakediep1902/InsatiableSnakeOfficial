@@ -50,6 +50,8 @@ public class EnemyController : MonoBehaviour
         Grow(length);
         segmentColor1 = Color.yellow;
         segmentColor2 = Color.black;
+
+        
     }  
     private void FixedUpdate()
     {     
