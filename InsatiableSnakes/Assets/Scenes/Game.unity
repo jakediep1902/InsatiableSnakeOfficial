@@ -14271,6 +14271,10 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 201447016}
+    - target: {fileID: 105546305173281400, guid: 4877ae1d26506b9418090ab7c448bfa7, type: 3}
+      propertyPath: AndroidRewardedID
+      value: ca-app-pub-3940256099942544/5224354917
+      objectReference: {fileID: 0}
     - target: {fileID: 2504431376202765369, guid: 4877ae1d26506b9418090ab7c448bfa7, type: 3}
       propertyPath: m_RootOrder
       value: 13

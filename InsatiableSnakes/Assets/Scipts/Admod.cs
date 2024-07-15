@@ -9,7 +9,6 @@ public class Admod : MonoBehaviour
     private BannerView bannerView;
     private InterstitialAd _interstitialAd;
     private RewardedAd _rewardedAd;
-    //private RewardedAd rewardedAd;
     public GameController gameController;
     public string AndroidBannerID = "ca-app-pub-3940256099942544/6300978111";//thu nghiem
     public string IOSBannerID = "ca-app-pub-3940256099942544/2934735716";//thu nghiem
@@ -32,8 +31,7 @@ public class Admod : MonoBehaviour
             //RequestBanner();
             //LoadInterstitialAd();
             LoadRewardedAd();
-        });
-
+        });       
     }
     private void RequestBanner()
     {
